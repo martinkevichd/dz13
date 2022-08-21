@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    padding: 5% 20% ;
+
+}
+
+.contacts {
+    border: 1px solid grey;
+    padding: 5%;
+    border-radius: 10px;
+    background: #ff416c;
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+.contacts__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15%;
+    
+}
+
+.contacts__form input {
+    width: 40%;
+    height: 35px;
+    margin-bottom: 2%;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 18px;
+    color: #696969;
+}
+
+.contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+    padding-top: 20px;
+    justify-content: center;
+    
+}
+.contacts__list li {
+    list-style: none;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: white;
+    text-align: center;
+    color: #696969;
+    box-shadow:  0 0 10px rgba(0,0,0,0.5);;
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 230px;
+    font-size: 24px;
+    line-height: 35px;
+    position: relative;
+}
+
+.contact__remove{
+    width: 30px;
+    height: 30px;
+    color: #ff416c;
+    font-size: 30px;
+    border-radius: 50%;
+    line-height: 20px;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.contact__remove:hover {
+    border: 1px solid #696969;
+
+}
+
+
