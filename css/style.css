@@ -25,12 +25,15 @@ body{
     
 }
 
+.contact__form_edit_name,
+.contact__form_edit_address,
+.contact__form_edit_email,
+.contact__form_edit_phone,
 .contacts__form input {
-    width: 40%;
-    height: 35px;
+    border:2px solid #ccc;
     margin-bottom: 2%;
     border-radius: 6px;
-    padding: 5px;
+    padding: 10px 20px;
     font-size: 18px;
     color: #696969;
 }
@@ -48,6 +51,7 @@ body{
     list-style: none;
 }
 
+.contact__form_edit,
 .contact{
     display: flex;
     flex-direction: column;
@@ -64,6 +68,7 @@ body{
     position: relative;
 }
 
+.contact__form_edit button,
 .contact__remove{
     width: 30px;
     height: 30px;
@@ -78,9 +83,19 @@ body{
     right: -10px;
 }
 
+.contact__form_edit button:hover,
 .contact__remove:hover {
     border: 1px solid #696969;
-
 }
+
+.contact__form_edit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 200px 100px #666;
+}
+
 
 
